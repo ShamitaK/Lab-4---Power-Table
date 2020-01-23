@@ -1,0 +1,11 @@
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\bin\Debug\netcoreapp3.1\Lab 4 - Power Table.exe
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\bin\Debug\netcoreapp3.1\Lab 4 - Power Table.deps.json
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\bin\Debug\netcoreapp3.1\Lab 4 - Power Table.runtimeconfig.json
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\bin\Debug\netcoreapp3.1\Lab 4 - Power Table.runtimeconfig.dev.json
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\bin\Debug\netcoreapp3.1\Lab 4 - Power Table.dll
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\bin\Debug\netcoreapp3.1\Lab 4 - Power Table.pdb
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\obj\Debug\netcoreapp3.1\Lab 4 - Power Table.csprojAssemblyReference.cache
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\obj\Debug\netcoreapp3.1\Lab 4 - Power Table.AssemblyInfoInputs.cache
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\obj\Debug\netcoreapp3.1\Lab 4 - Power Table.AssemblyInfo.cs
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\obj\Debug\netcoreapp3.1\Lab 4 - Power Table.dll
+C:\Users\shami\source\repos\Lab 4 - Power Table\Lab 4 - Power Table\obj\Debug\netcoreapp3.1\Lab 4 - Power Table.pdb
