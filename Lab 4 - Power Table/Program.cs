@@ -11,47 +11,54 @@ namespace Lab_4___Power_Table
                 Console.WriteLine("Learn Your Squares and Cubes!\n");
 
                 //Ask the User to Enter a Valid Integer
-                Console.WriteLine("Enter an integer: ");
-                int userChoice = int.Parse(Console.ReadLine());
+                GetUserInput("Please enter an integer: ");
+                double userNum = double.Parse(Console.ReadLine());
 
-                //Helps align the table when its printed out
-                Console.WriteLine("Number Squared Cubed");
-                Console.WriteLine("====== ====== ======");
+                //Words spaced out to help make it appear more like a table when it is printed to the console.
+                Console.WriteLine("\nNumber    \tSquared    \tCubed");
+                Console.WriteLine("_________________________________________");
+
 
                 //Add For loop here. To display squared and cubed numbers.
-                for (int i = 1; i <= userChoice; i++)
+                for (int i = 1; i <= userNum; i++)
                 {
-                    Console.WriteLine($"{i} \t{SquaredNumber(i)} \t{CubedNumber(i)}");
+                    Console.WriteLine($"{i}       \t{SquaredNumber(i)}        \t{CubedNumber(i)}\t");
+                    Console.WriteLine("_________________________________________");
                 }
 
-            } while (Continue()); //do while loop must include semi colon
-            Console.WriteLine("Okiiieeeeee BAAAAAIIIIIIIIIIIEEEEE, thanks for playing!");
-        }
+                
 
-        //created a seperate method for all Squared integers
+            } while (Continue()); //do-while loop normally doesnt end with a (;) but in this case it must include the semi colon because it is a method.
+            
+        }
+        
+        //Created a seperate method for all Squared integers
         public static double SquaredNumber(double number)
         {
-            return Math.Pow(number, 2);
+            //w
+            double squaredNum = Math.Pow(number, 2);
+            return squaredNum;
         }
 
-        //created a seperate method for all cubed integers.
-        public static int CubedNumber(int number)
+        //Created a seperate method for all cubed integers.
+        public static double CubedNumber(double number)
         {
-            //math.pow returns a double so to cast it as an int, put (int). For a different way to handle this look at the squared method.
-            return (int)Math.Pow(number, 3);
+            //math.pow is specifically used to square numbers.
+            //note to myself: math.pow returns a double so to cast it as an int, put (int). For a different way to handle this look at the squared method.
+            return Math.Pow(number, 3);
         }
-        public static string GetUserInput(string message)
+        public static string GetUserInput(string input)
         {
-            Console.WriteLine(message);
-            string input = Console.ReadLine();
+            Console.WriteLine(input);
             return input;
+
         }
 
-        //Seperate Method to Ask id the user wants to continue or not.
+        //Seperate Method to ask the user wants to continue or not.
         public static bool Continue()
         {
             //Checking if the user would like to continue...
-            Console.WriteLine("Continue: y/n");
+            Console.WriteLine("\nContinue: y/n");
             string userContinue = Console.ReadLine().ToLower();
 
             
@@ -62,12 +69,13 @@ namespace Lab_4___Power_Table
             }
             else if (userContinue == "n" || userContinue == "no")
             {
+                Console.WriteLine("Okiiieeeeee BAAAAAIIIIIIIIIIIEEEEE, thanks for playing!");
                 return false;
             }
             else
             {
                 Console.WriteLine("Invalid Number, Please try again. y/n");
-                //This is an example of a recursion because it is calling the same method inside of itself. It will only stop once they hit y or yes.
+                //This is an example of a RECURSION because it is calling the same method inside of itself. It will only stop once they hit y or yes.
                 return Continue();
             }
             
